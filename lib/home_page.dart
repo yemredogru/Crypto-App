@@ -54,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future<void> fetchData() async {
     var url = Uri.parse(
-        'https://api.nomics.com/v1/currencies/ticker?key=da1bcdeaf3d255801cc4d3209a3bc6e9b59c9cbf');
+        'https://api.nomics.com/v1/currencies/ticker?key=your_key');
     http.get(url).then((result) {
       var data = jsonDecode(result.body);
       crypto = data;
